@@ -15,7 +15,7 @@ function atualizarUsuario(rl, menu, usuarios) {
 
         if (!usuarioEncontrado) {
             console.log('Erro: Usuário não encontrado.');
-            return menu(rl);
+            return atualizarUsuario(rl);
         }
 
         console.log(`\nUsuário encontrado: ${usuarioEncontrado.nome}`);
